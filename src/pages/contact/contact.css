@@ -1,0 +1,143 @@
+.contact-container {
+  display: flex;
+  width: 90%;
+  margin: auto;
+}
+
+.contact-content {
+  color: white;
+  width: 100%;
+  margin-top: 40px;
+}
+.contact-content h1 {
+  color: #0AFF9D;
+  font-size: 25px;
+  font-family: "Gill Sans", sans-serif;
+}
+.contact-content h2 {
+  margin-top: 20px;
+  color: #EBECF3;
+  font-family: "Gill Sans", sans-serif;
+}
+.contact-content .address {
+  width: 100%;
+  margin-top: 10px;
+  display: flex;
+  gap: 100px;
+}
+
+.address a,
+span {
+  color: #999999;
+  border-radius: 10px;
+  margin-top: 10px;
+  transition: all 0.5s;
+}
+.address a:hover {
+  color: white;
+}
+
+.contact-form {
+  width: 100%;
+  display: flex;
+}
+
+.contact-form form {
+  width: 50%;
+  margin-top: 40px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+  position: relative;
+}
+
+.contact-form form input,
+textarea {
+  width: 90%;
+  background-color: #0a0a0a;
+  background: transparent;
+  border: 0;
+  font-size: 16px;
+  background-color: #161616;
+  border-bottom: 1px solid #404040;
+  margin-top: 10px;
+  padding-bottom: 20px;
+  outline: 0;
+  color: #EBECF3;
+}
+.contact-form form label {
+  color: #EBECF3;
+  font-size: 16px;
+}
+.contact-form form input:focus,
+textarea:focus {
+  border-bottom: 1px solid white;
+}
+.submit-message {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  justify-content: space-between;
+}
+
+.submit-message button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 16px;
+  padding: 15px 30px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  transition: all 0.5s;
+}
+
+.submit-message button:hover {
+  cursor: pointer;
+  color: black;
+  background-color: white;
+}
+.contact-form .contact-animation {
+  display: flex;
+  justify-content: start;
+}
+.contact-form .contact-animation .animation {
+  height: 450px;
+}
+@media (width <= 1024px) {
+  .contact-form form {
+    width: 60%;
+  }
+  .contact-form .contact-animation {
+    align-items: center;
+  }
+  .contact-form .contact-animation .animation {
+    height: 300px;
+  }
+}
+
+@media (width <= 768px) {
+  .contact-form {
+    flex-direction: column-reverse;
+    padding-bottom: 30px;
+  }
+  .contact-form form {
+    width: 100%;
+  }
+  .contact-form form input,
+  textarea {
+    width: 100%;
+  }
+  .submit-message {
+    width: 100%;
+  }
+  .contact-content .address{
+    flex-direction: column;
+    gap: 10px;
+  }
+  .submit-message button {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
