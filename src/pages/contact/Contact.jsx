@@ -75,7 +75,7 @@ const Contact = () => {
                         style={{ height: 35 }}
                         animationData={doneAnimation}
                       />
-                      TYour submission has been received!
+                      Your submission has been received!
                     </>
                   )}
                 </span>
