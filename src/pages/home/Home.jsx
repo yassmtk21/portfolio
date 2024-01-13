@@ -8,9 +8,8 @@ import {
 } from "react-icons/ri";
 import Lottie from "lottie-react";
 import portfolioAnimation from "../../Animation/portfolioAnimation.json";
-import CV from "./CV-MOUTIK-YASSINE.pdf";
-import Reveal from "../Reveal";
 import { Link } from "react-router-dom";
+import Aos from "../AosComponent";
 
 const Home = () => {
   return (
@@ -21,15 +20,15 @@ const Home = () => {
             <Lottie className="profil" animationData={portfolioAnimation} />
           </div>
           <div className="content-text">
-            <h1>Hi,</h1>
-            <h1>I'm Yassine,</h1>
-            <h1>Web Developer</h1>
-            <p>I'm a passionate Web Developer from Morocco.</p>
+            <h1><Aos data_aos={"fade-right"}>Hi</Aos></h1>
+            <h1><Aos data_aos={"fade-left"}>I'm <span style={{color: "#0aff9d"}}>Yassine</span>,</Aos></h1>
+            <h1><Aos data_aos={"fade-right"}>Web Developer</Aos></h1>
+            <p><Aos data_aos={"zoom-out-left"}>I'm a passionate Web Developer from Morocco.</Aos></p>
             <div className="social">
               <div style={{ display: "flex", gap: "10px" }}>
-                <RiGithubLine className="icons" />
-                <RiLinkedinBoxLine className="icons" />
-                <RiTwitterXFill className="icons" />
+                <a href="https://github.com/yassmtk21" target="_blank"><RiGithubLine className="icons"/></a>
+                <a href="https://www.linkedin.com/in/yassine-moutik-35b275288/" target="_blank"><RiLinkedinBoxLine className="icons" /></a>
+                <a href="https://www.facebook.com/" target="_blank"><RiTwitterXFill className="icons" /></a>
               </div>
               <div className="resume">
                 <Link to="/contact">Contact Me</Link>

@@ -2,6 +2,7 @@ import React from "react";
 import "./about.css";
 import AnimatedPage from "../AnimatedPage";
 import aboutMe from "./aboutMe.jpg";
+import Reveal from "../Reveal";
 
 const About = () => {
   return (
@@ -9,16 +10,24 @@ const About = () => {
       <div className="aboutContainer">
         <div className="about-content">
           <div className="description-About">
-            <span>About Me</span>
+            <span>
+              <Reveal>About Me</Reveal>
+            </span>
+
             <br />
-            <h1>A dedicated Web Developer Morocco</h1>
-            <p>
-              Hello, and welcome to my web development portfolio! I'm{" "}
-              <span>Moutik Yassine</span> a junior web developer with a passion
-              for creating interactive and user-friendly websites. In this
-              digital space, I strive to blend creativity with technical skills
-              to bring ideas to life.
-            </p>
+            <Reveal>
+              <h1>A dedicated Web Developer Morocco</h1>
+            </Reveal>
+            <Reveal>
+              <p>
+                Hello, and welcome to my web development portfolio! I'm{" "}
+                <span>Moutik Yassine</span> a junior web developer witha diploma
+                in full-stack web development.I have a passion for creating
+                interactive and user-friendly websites. In this digital space, I
+                strive to blend creativity with technical skills to bring ideas
+                to life.
+              </p>
+            </Reveal>
           </div>
           <div className="image-about">
             <div className="scroll-image">
@@ -32,8 +41,8 @@ const About = () => {
             <span>01</span>
             <h2>Skills</h2>
             <p>
-              I specialize in HTML, CSS, JavaScript, React, Tailwind, and
-              PHP, Laravel and MySql
+              I specialize in HTML, CSS, JavaScript, React, Tailwind, and PHP,
+              Laravel and MySql
             </p>
           </div>
           <div className="parts-descr">

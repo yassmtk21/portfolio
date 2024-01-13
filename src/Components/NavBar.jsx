@@ -3,8 +3,9 @@ import { Link } from "react-router-dom";
 import { RiMenuFill, RiCloseFill } from "react-icons/ri";
 const NavBar = () => {
   const pathname = window.location.pathname.substring(1);
-  const listMenu = ["Home", "About", "work", "Contact"];
+  const listMenu = ["home", "about", "work", "contact"];
   const [isMenu, setIsMenu] = useState(false);
+
   return (
     <div className="nav-bar">
       <div className="nav-barImage">
@@ -26,17 +27,7 @@ const NavBar = () => {
         <ul>
           {listMenu.map((list, i) => (
             <Link key={i} to={list} style={{ textDecoration: "none" }}>
-              <li
-                style={
-                  pathname === list
-                    ? {
-                        backgroundColor: "#353535",
-                        color: "white",
-                        borderRadius: "50px",
-                      }
-                    : {}
-                }
-              >
+              <li className={pathname === list ? "active" : "inactive"}>
                 {list.toUpperCase()}
               </li>
             </Link>
