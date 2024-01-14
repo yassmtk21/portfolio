@@ -45,7 +45,7 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="nav-barMobile">
-        <div className="nav-barMenu">
+        <div className="menu">
           <RiMenuFill
             onClick={() => setIsMenu(true)}
             size={25}
