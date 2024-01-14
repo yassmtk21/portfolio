@@ -11,15 +11,13 @@ function App() {
   return (
     <>
       <div>
-        <header>
-          <NavBar />
-        </header>
+        <NavBar />
         <main>
           <AnimatePresence initial={false} mode="wait">
             <Routes location={location} key={location.pathname}>
-              <Route path={"/"} element={<Navigate to={"/Home"} />} />
+              <Route path={"/"} element={<Navigate to={"/home"} />} />
               <Route path={"/home"} element={<Home />} />
-              <Route path={"/about"} element={<About />} o />
+              <Route path={"/about"} element={<About />} />
               <Route path={"/work"} element={<Projects />} />
               <Route path={"/contact"} element={<Contact />} />
             </Routes>

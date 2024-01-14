@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
-const Reveal = ({ children, color }) => {
+const Reveal = ({ children }) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
   const mainControls = useAnimation();
@@ -20,8 +20,8 @@ const Reveal = ({ children, color }) => {
     >
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 50},
-          visible: { opacity: 1, y: 0},
+          hidden: { opacity: 0, y: 50 },
+          visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
         animate={mainControls}
@@ -32,12 +32,12 @@ const Reveal = ({ children, color }) => {
       <motion.div
         style={{
           position: "absolute",
-          top: 4,
-          bottom: 4,
+          top: 0,
+          bottom: 0,
           left: 0,
           right: 0,
           background: "#0AFF9D",
-          zIndex: 9999,
+          zIndex: 99,
         }}
         variants={{
           hidden: { left: "0%" },
@@ -45,7 +45,7 @@ const Reveal = ({ children, color }) => {
         }}
         initial="hidden"
         animate={slidControls}
-        transition={{ duration: .5, ease: "easeIn" }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
       />
     </div>
   );

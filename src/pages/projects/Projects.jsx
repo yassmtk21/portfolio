@@ -39,10 +39,10 @@ const Projects = () => {
       projectTitle: "portfolio",
       date: "Jan 2024",
       description:
-        "My portfolio website serves as a centralized platform where I showcase my expertise in web development. It represents a fusion of creativity, innovation and an array of projects that demonstrate my skills and enthusiasm, for creating online experiences.",
+        "My portfolio website serves as a centralized platform where I showcase my expertise in web development. that demonstrate my skills, for creating online experiences.",
       skill_1: "React js",
       skill_2: "CSS3",
-      link_Demo: 'Home',
+      link_Demo: "home",
       link_Code: "https://github.com/yassmtk21/QuickAnnonce",
     },
   ];
@@ -52,9 +52,10 @@ const Projects = () => {
         <div className="poject-title">
           <Reveal>
             <h2>My Work</h2>
+            <br />
           </Reveal>
           <Reveal>
-            <h1>Each project is a unique piece of development</h1>
+            <h3>Each project is a unique piece of development</h3>
           </Reveal>
         </div>
         {InfoProjects.map(
@@ -74,19 +75,18 @@ const Projects = () => {
           ) => (
             <div className="content-project" id={id} key={i}>
               <div className="imgs-projects">
-                <Reveal>
-                  <img src={src_img} alt="" />
-                </Reveal>
+                <img className="img" src={src_img} alt="" />
               </div>
               <div className="description-project">
                 <h2>
                   <Reveal>{projectTitle}</Reveal>
-                  <span>{date}</span>
                 </h2>
+                <span className="span">
+                  <Reveal>{date}</Reveal>
+                </span>
                 <Reveal>
                   <p>{description}</p>
                 </Reveal>
-
                 <div className="project-skills">
                   <Reveal>
                     <span>{skill_1}</span>
@@ -95,7 +95,6 @@ const Projects = () => {
                     <span>{skill_2}</span>
                   </Reveal>
                 </div>
-
                 <Reveal>
                   <div className="website">
                     <a

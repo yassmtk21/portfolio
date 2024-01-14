@@ -5,11 +5,21 @@ const NavBar = () => {
   const pathname = window.location.pathname.substring(1);
   const listMenu = ["home", "about", "work", "contact"];
   const [isMenu, setIsMenu] = useState(false);
+  const [NavBar, setNavBar] = useState(false);
+
+  const changeBackground = () => {
+    if (window.scrollY >= 40) {
+      setNavBar(true);
+    } else {
+      setNavBar(false);
+    }
+  };
+
+  window.addEventListener("scroll", changeBackground);
 
   return (
-    <div className="nav-bar">
-      <div className="nav-barImage">
-        <img src="#" alt="" />
+    <div className={NavBar ? "nav-bar navbar-active" : "nav-bar"}>
+      <div className="nav-logo">
         <Link
           to="/home"
           style={{
@@ -34,7 +44,7 @@ const NavBar = () => {
           ))}
         </ul>
       </div>
-      <div className="nav-barContact">
+      <div className="nav-barMobile">
         <div className="nav-barMenu">
           <RiMenuFill
             onClick={() => setIsMenu(true)}
