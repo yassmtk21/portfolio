@@ -20,12 +20,12 @@ const Reveal = ({ children }) => {
     >
       <motion.div
         variants={{
-          hidden: { opacity: 0, y: 50 },
+          hidden: { opacity: 0, y: 20 },
           visible: { opacity: 1, y: 0 },
         }}
         initial="hidden"
         animate={mainControls}
-        transition={{ duration: 0.75, delay: 0.5 }}
+        transition={{ duration: 0.5, delay: 0.5 }}
       >
         {children}
       </motion.div>
@@ -40,12 +40,12 @@ const Reveal = ({ children }) => {
           zIndex: 99,
         }}
         variants={{
-          hidden: { left: "0%" },
+          hidden: { left: 0 },
           visible: { left: "100%" },
         }}
         initial="hidden"
         animate={slidControls}
-        transition={{ duration: 0.5, ease: "easeIn" }}
+        transition={{ duration: 0.5, ease: "easeInOut" }}
       />
     </div>
   );
