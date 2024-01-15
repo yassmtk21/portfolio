@@ -52,7 +52,6 @@ const Projects = () => {
         <div className="poject-title">
           <Reveal>
             <h2>My Work</h2>
-            <br />
           </Reveal>
           <Reveal>
             <h3>Each project is a unique piece of development</h3>
