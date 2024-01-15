@@ -4,7 +4,7 @@ import AnimatedPage from "../AnimatedPage";
 import {
   RiGithubLine,
   RiLinkedinBoxLine,
-  RiTwitterXFill,
+  RiInstagramLine,
 } from "react-icons/ri";
 import Lottie from "lottie-react";
 import portfolioAnimation from "../../Animation/portfolioAnimation.json";
@@ -28,7 +28,7 @@ const Home = () => {
               <div style={{ display: "flex", gap: "10px" }}>
                 <a href="https://github.com/yassmtk21" target="_blank"><RiGithubLine className="icons"/></a>
                 <a href="https://www.linkedin.com/in/yassine-moutik-35b275288/" target="_blank"><RiLinkedinBoxLine className="icons" /></a>
-                <a href="https://www.facebook.com/" target="_blank"><RiTwitterXFill className="icons" /></a>
+                <a href="https://www.instagram.com/yassinmoutik/" target="_blank"><RiInstagramLine className="icons" /></a>
               </div>
               <div className="resume">
                 <Link to="/contact">Contact Me</Link>

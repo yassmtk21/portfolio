@@ -18,7 +18,7 @@ function App() {
               <Route path={"/"} element={<Navigate to={"/home"} />} />
               <Route path={"/home"} element={<Home />} />
               <Route path={"/about"} element={<About />} />
-              <Route path={"/work"} element={<Projects />} />
+              <Route path={"/projects"} element={<Projects />} />
               <Route path={"/contact"} element={<Contact />} />
             </Routes>
           </AnimatePresence>

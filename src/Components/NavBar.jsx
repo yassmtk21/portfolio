@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { RiMenuFill, RiCloseFill } from "react-icons/ri";
 const NavBar = () => {
   const pathname = window.location.pathname.substring(1);
-  const listMenu = ["home", "about", "work", "contact"];
+  const listMenu = ["home", "about", "projects", "contact"];
   const [isMenu, setIsMenu] = useState(false);
   const [NavBar, setNavBar] = useState(false);
 
