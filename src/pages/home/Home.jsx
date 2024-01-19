@@ -42,12 +42,12 @@ const Home = () => {
               </div>
               <div className="skills">
                 <img src="https://skillicons.dev/icons?i=html,css" alt="#" />
-                <img src="https://skillicons.dev/icons?i=js,react" alt="#" />
+                <img src="https://skillicons.dev/icons?i=js,typescript" alt="#" />  
+                <img src="https://skillicons.dev/icons?i=react,tailwind" />
                 <img
                   src="https://skillicons.dev/icons?i=laravel,mysql"
                   alt="#"
                 />
-                <img src="https://skillicons.dev/icons?i=tailwind,bootstrap" />
               </div>
             </div>
           </div>
