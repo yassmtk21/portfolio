@@ -2,7 +2,7 @@ import React, { useEffect, useRef } from "react";
 import { motion, useAnimation, useInView } from "framer-motion";
 const Reveal = ({ children }) => {
   const ref = useRef(null);
-  const isInView = useInView(ref, { once: true });
+  const isInView = useInView(ref, { triggerOnce: true });
   const mainControls = useAnimation();
   const slidControls = useAnimation();
   useEffect(() => {
@@ -45,7 +45,7 @@ const Reveal = ({ children }) => {
         }}
         initial="hidden"
         animate={slidControls}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
+        transition={{ duration: 0.5, ease: "easeIn" }}
       />
     </div>
   );
